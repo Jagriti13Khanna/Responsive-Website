@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'milkshake';
+    src: url('../fonts/milkshake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arial_black';
+    src: url('../fonts/arial-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'B612', sans-serif;
+    /* color: #f5e7cb; */
+}
+
+.container {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #171816;   
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+header a {
+    text-decoration: none;
+    color: #f5e7cb;
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    font-family: 'milkshake';
+    margin: 0;   
+}
+
+h1 a {
+    text-transform: none;
+    font-size: 2rem;
+}
+
+.color1 {
+    fill: #f5e7cb;
+}
+
+.color2{
+    fill: #bc512b;
+}
+
+svg {
+    height: 2rem;
+}
+
+nav ul, nav ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 100%;
+    background-color: #1c1d1b; 
+    left: 0;
+    right: 0;
+    padding: 0 5%;
+}
+
+nav hr {
+    border: 0.5px solid #f5e7cb;
+    margin: 0;
+}
+
+nav ul li{
+    padding: 1rem 0;
+}
+
+li svg {
+    margin-right: 0.5rem;
+}
+
+nav ul li a{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+ol {
+    display: flex;
+}
+
+ol a{
+    border: 1px solid #f5e7cb;
+    padding: 0.75rem 1rem;
+}
+
+ol li {
+    margin: 2rem 2rem 3rem 0;
+}
+
+section:first-of-type {
+    background-image: url('../img/header_banner.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 91vh;
+    position: relative;
+}
+
+section:first-of-type div {
+    background-color: #daa03d;
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    padding: 4rem 1.5rem;
+}
+
+h2 {
+    font-size: 2.75rem;
+    line-height: 1.7;
+    text-transform: capitalize;
+    color: black;
+}
+
+main hr {
+    border: 2px solid #c6552c;
+    width: 2rem;
+    margin: 1rem auto;
+}
+
+hr + p {
+    line-height: 1.75;
+    color: black;
+}
+
+section:nth-of-type(2) {
+    background-color: #1c1d1b;
+}
+
+section:nth-of-type(2) div,
+section:last-of-type div  {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+h3 {
+    font-size: 2rem;   
+}
+
+h3 + p {
+    color: #c6552c;
+    font-family: 'arial_black';
+    text-transform: uppercase;
+    order: -2;
+    padding: 0;
+    margin: 0;
+    line-height: 1.75;
+}
+
+section:nth-of-type(2) p:last-of-type {
+    margin: 3rem 0;
+    line-height: 1.75;
+    color: #f5e7cb;
+}
+
+section:nth-of-type(2) h3,
+section:last-of-type h3  {
+    color: #f5e7cb;
+}
+
+section:nth-of-type(2) a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #f5e7cb;
+    border-top: 1px solid #f5e7cb;
+    border-bottom: 1px solid #f5e7cb;
+    width: 10rem;
+    padding: 1rem 1.5rem;
+}
+
+section:last-of-type {
+    background-color: #daa03d;
+    background-image: url('../img/girl_working.jpg');
+    background-repeat: no-repeat;
+    background-position: 0% 25%;
+    background-origin: content-box;
+}
+
+section div div:first-of-type {
+    background-color: #1c1d1b;
+    padding: 1rem;
+    margin-bottom: 17rem;
+}
+
+section div ul {
+    color: black;
+    line-height: 2;
+    padding-left: 1.5rem;
+}
+
+section div div a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border-top: 1.5px solid #c6552c;
+    border-bottom: 1.5px solid #c6552c;
+    width: 12rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+section div div:last-of-type {
+    padding-bottom: 0;
+}
+
+footer {
+    background-color: #1a1b19;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin: 0;
+    text-align: right;
+}
+
+footer p {
+    line-height: 1.2;
+}
+
+footer p:first-of-type {
+    font-family: 'arial_black';
+    /* text-transform: uppercase; */
+    font-style: normal;
+    color: #171816;
+    font-size: 6rem;
+    padding-top: 4rem;
+    margin-bottom: 1.65rem;
+}
+
+footer p:last-of-type {
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+span {
+    display: block;
+}
+
+footer p:last-of-type {
+    color: #f5e7cb;
+}
+
+@media (min-width: 850px) {
+    .menu-btn {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        display: flex;
+        align-items: baseline;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    nav ul {
+        display: flex;
+        text-align: center;
+        margin-right: 5rem;
+        padding: 0 11.5rem 0 11rem;
+        /* justify-content: space-between; */
+    }
+    
+    nav ul li {
+        padding: 0 1rem;
+    }
+
+    nav ol li {
+        margin: 0 0 0 1rem;
+    }
+
+    nav {
+        background-color: #171816;
+    }
+
+    nav hr {
+        display: none;
+    }
+
+    nav ol a:hover,
+    nav ol a:active {
+        background-color: #daa03d;
+        color: black;
+    }
+
+    nav ul a:hover,
+    nav ul a:active {
+        color: #bc512b;
+    }
+
+    section:first-of-type {
+        margin: 0;
+    }
+
+    section:first-of-type div {
+        width: 40%;
+        left: 10%;
+        margin: 0;
+        bottom: -15%;
+    }
+
+    section:nth-of-type(2) div {
+        margin: 0;
+        width: 50%;
+        margin-left: 50%;
+        padding-top: 7%;
+    }
+
+    section:nth-of-type(2) a:hover,
+    section:nth-of-type(2) a:active {
+        background-color: #daa03d;
+        color: black;
+        border-top: 1.5px solid #daa03d;
+        border-bottom: 1.5px solid #daa03d;
+    }
+
+    section:last-of-type {
+        background-position: 0 50%;
+        padding: 0 20px;
+    }
+
+    section:last-of-type div div:first-of-type{
+        margin-bottom: 0;
+        width: 40%;
+        margin-left: 5%;
+    }
+
+    section:last-of-type div div:last-of-type {
+        margin-left: 50%;
+        padding-top: 0;
+    }
+
+    section:last-of-type a:hover,
+    section:last-of-type a:active {
+        background-color: #171816;
+        color: white;
+        border-top: 1.5px solid #171816;
+        border-bottom: 1.5px solid #171816;
+    }
+
+    footer p:first-of-type {
+        font-size: 9.5rem;
+        line-height: 1.2;
+        margin-bottom: 2.5rem;
+        text-transform: uppercase;
+    }
+
+    footer p:last-of-type {
+        font-size: 0.875rem;
+    }
+
+
+}
